@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Valley Retreats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="nav-toggle">
+            <span>&#9776;</span>
+        </div>
+        <div class="logo"><a href="index.html">Valley Retreats</a></div>
+        <a href="contact.html" class="book-btn">Book Your Stay</a>
+    </header>
+
+    <div class="page-header" style="height: 50vh;">
+        <img src="images/hero_bg.png" alt="Contact" class="bg-img">
+        <h1>Start Your Journey</h1>
+    </div>
+
+    <section class="contact-container">
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="interest">I am interested in...</label>
+                <select id="interest" name="interest">
+                    <option value="general">General Inquiry</option>
+                    <option value="cabin">Booking a Cabin</option>
+                    <option value="yurt">Booking a Yurt</option>
+                    <option value="retreat">Group Retreats</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                    placeholder="Tell us about your desired dates or any questions..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn"
+                onclick="event.preventDefault(); alert('Thank you for your inquiry. We will contact you shortly.');">Send
+                Request</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <div class="logo">Valley Retreats</div>
+        <div class="footer-nav">
+            <a href="our-story.html">Our Story</a>
+            <a href="accommodations.html">Spaces</a>
+            <a href="journal.html">Journal</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Valley Retreats. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

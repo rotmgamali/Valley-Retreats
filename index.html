@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley Retreats | Wellness in Ogden Valley</title>
+    <meta name="description"
+        content="Luxury wellness retreats in Ogden Valley, Utah. Meditation, sound healing, and nature immersion.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-toggle">
+            <span>&#9776;</span>
+        </div>
+        <div class="logo"><a href="index.html">Valley Retreats</a></div>
+        <nav class="desktop-nav" style="display: none;">
+            <!-- Hidden for now, or just links in footer/toggle. Lets make them visible or part of toggle. For simplicity in this 'habitas' style, usually its a modal or side menu. But I'll put them in footer or just assume side menu logic. Actually habitas has a burger. I'll stick to burger logic but add links for clarity in footer mostly, or maybe add a simple nav row for desktop if requested. Let's just keep the header simple and use the text links. Wait, the user wants navigatable. I should probably add actual links to the header or just update the footer strings. The footer already has them. I will update the FOOTER links specifically and maybe add a hidden nav menu structure if I was modifying script.js, but I'll stick to updating the Book Button and Footer for now, and maybe the "logo" link. Actually, I will explicitly add the links to the header for better UX if I can. Let's assume the burger menu implies a complex script I don't fully have. I'll put the links in the footer and maybe add a simple row. -->
+            <!-- keeping simple header for now, linking Logo -->
+        </nav>
+        <a href="contact.html" class="book-btn">Book Your Stay</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Background Image with fallback -->
+        <div class="hero-bg"></div>
+        <img src="images/hero_bg.png" alt="Ogden Valley Mountains" class="hero-bg" style="display:none;"
+            onload="this.style.display='block'">
+
+        <div class="hero-content">
+            <h1>Sanctuary for the Soul</h1>
+            <p>Reconnect with nature in Ogden Valley, Utah</p>
+        </div>
+
+        <div class="scroll-indicator">
+            Explore
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="manifesto">
+        <h2>Luxury for the Spirit</h2>
+        <p>
+            We believe in the power of nature to heal and restore. Valley Retreats is more than a destination;
+            it is a journey inward. Surrounded by the majestic mountains of Ogden Valley, our spaces are designed
+            to foster connection—to the earth, to community, and to yourself. Through meditation, sound, and
+            movement, we curate experiences that linger long after you leave.
+        </p>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences">
+        <div class="section-header">
+            <h2>Our Experiences</h2>
+            <p>Curated moments of presence and joy</p>
+        </div>
+
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="images/meditation_experience.png" alt="Meditation in Nature"
+                    onerror="this.src='https://placehold.co/600x800/8A9A5B/FFFFFF?text=Meditation'">
+                <div class="card-overlay">
+                    <h3>Mindfulness & Meditation</h3>
+                    <p>Guided sessions in the alpine meadows</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="images/sound_healing.png" alt="Sound Healing"
+                    onerror="this.src='https://placehold.co/600x800/E2725B/FFFFFF?text=Sound+Healing'">
+                <div class="card-overlay">
+                    <h3>Sound Healing</h3>
+                    <p>Crystal bowls and vibrational therapy</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="images/fire_dancing.png" alt="Fire Dancing"
+                    onerror="this.src='https://placehold.co/600x800/2C2C2C/FFFFFF?text=Fire+Rituals'">
+                <div class="card-overlay">
+                    <h3>Fire Rituals</h3>
+                    <p>Ceremonial gatherings under the stars</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="images/healthy_food.png" alt="Farm to Table"
+                    onerror="this.src='https://placehold.co/600x800/708090/FFFFFF?text=Culinary+Art'">
+                <div class="card-overlay">
+                    <h3>Nourishing Cuisine</h3>
+                    <p>Organic, farm-to-table vegetarian dining</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Section -->
+    <section class="accommodations">
+        <div class="section-header">
+            <h2>Our Spaces</h2>
+        </div>
+
+        <div class="split-layout">
+            <div class="split-image">
+                <img src="images/cabin_exterior.png" alt="Luxury Cabin"
+                    onerror="this.src='https://placehold.co/800x600/C0C0C0/333333?text=Luxury+Cabins'">
+            </div>
+            <div class="split-content">
+                <h3>The Cabins</h3>
+                <p>
+                    Architecturally stunning A-frames designed to blend seamlessly with the forest.
+                    Floor-to-ceiling windows bring the outdoors in, providing a cozy sanctuary
+                    with modern amenities.
+                </p>
+                <a href="#" class="btn-outline">View Rooms</a>
+            </div>
+        </div>
+
+        <div class="split-layout reverse-layout">
+            <div class="split-content">
+                <h3>The Yurts</h3>
+                <p>
+                    Experience the ultimate closeness to nature in our luxury yurts.
+                    Circular spaces designed for energy flow, featuring skylights
+                    for stargazing from the comfort of your bed.
+                </p>
+                <a href="#" class="btn-outline">View Yurts</a>
+            </div>
+            <div class="split-image">
+                <img src="images/yurt_interior.png" alt="Luxury Yurt"
+                    onerror="this.src='https://placehold.co/800x600/E2725B/FFFFFF?text=Luxury+Yurts'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Journeys / Calendar -->
+    <section class="journeys">
+        <div class="section-header">
+            <h2>Upcoming Journeys</h2>
+            <p>Immersive retreats for every season</p>
+        </div>
+        <div class="journey-list">
+            <div class="journey-item">
+                <div class="journey-date">
+                    <span class="month">OCT</span>
+                    <span class="day">12-15</span>
+                </div>
+                <div class="journey-info">
+                    <h3>Autumn Equinox Renewal</h3>
+                    <p>Breathwork • Hiking • Sound Healing</p>
+                </div>
+                <a href="#" class="text-link">Details &rarr;</a>
+            </div>
+            <div class="journey-item">
+                <div class="journey-date">
+                    <span class="month">NOV</span>
+                    <span class="day">08-11</span>
+                </div>
+                <div class="journey-info">
+                    <h3>Silence & Solitude</h3>
+                    <p>Vipassana • Meditation • Restorative Yoga</p>
+                </div>
+                <a href="#" class="text-link">Details &rarr;</a>
+            </div>
+            <div class="journey-item">
+                <div class="journey-date">
+                    <span class="month">DEC</span>
+                    <span class="day">20-27</span>
+                </div>
+                <div class="journey-info">
+                    <h3>Winter Solstice Gathering</h3>
+                    <p>Fire Rituals • Community • Feasts</p>
+                </div>
+                <a href="#" class="text-link">Details &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal Section -->
+    <section class="journal">
+        <div class="section-header">
+            <h2>The Valley Journal</h2>
+        </div>
+        <div class="grid">
+            <div class="card journal-card">
+                <img src="images/journal_1.png" alt="Journal 1"
+                    onerror="this.src='https://placehold.co/600x400/708090/FFFFFF?text=Nature+Therapy'">
+                <div class="journal-content">
+                    <span class="category">Wellness</span>
+                    <h3>The Science of Forest Bathing</h3>
+                    <a href="#" class="read-more">Read Story</a>
+                </div>
+            </div>
+            <div class="card journal-card">
+                <img src="images/journal_2.png" alt="Journal 2"
+                    onerror="this.src='https://placehold.co/600x400/8A9A5B/FFFFFF?text=Local+Flora'">
+                <div class="journal-content">
+                    <span class="category">Nature</span>
+                    <h3>Foraging in Ogden Valley</h3>
+                    <a href="#" class="read-more">Read Story</a>
+                </div>
+            </div>
+            <div class="card journal-card">
+                <img src="images/journal_3.png" alt="Journal 3"
+                    onerror="this.src='https://placehold.co/600x400/E2725B/FFFFFF?text=Sound+Healing'">
+                <div class="journal-content">
+                    <span class="category">Music</span>
+                    <h3>Vibrations of the Soul</h3>
+                    <a href="#" class="read-more">Read Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">Valley Retreats</div>
+        <div class="footer-nav">
+            <a href="our-story.html">Our Story</a>
+            <a href="accommodations.html">Spaces</a>
+            <a href="journal.html">Journal</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Valley Retreats. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
