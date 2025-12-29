@@ -901,19 +901,7 @@ footer {
     }
 }
 
-0% {
-    transform: scale(1);
-}
 
-50% {
-    transform: scale(1.1);
-    stroke: var(--accent-sage);
-}
-
-100% {
-    transform: scale(1);
-}
-}
 
 /* Draw animation for page load */
 .path-draw {
