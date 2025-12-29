@@ -630,23 +630,34 @@ footer {
         flex-direction: column;
     }
 }
+
 /* --- High Contrast Updates --- */
 .hero-content {
-    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-.hero-content h1, .page-header h1 {
-    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+.hero-content h1,
+.page-header h1 {
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
 .card-overlay {
-    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 50%, transparent 100%);
-    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.manifesto p, .journey-info p, .amenities-list {
-    color: #333333; /* Darker grey for accessibility */
-    font-weight: 400; /* Slightly heavier weight */
+.card-overlay h3,
+.card-overlay p {
+    color: #FFFFFF !important;
+}
+
+.manifesto p,
+.journey-info p,
+.amenities-list {
+    color: #333333;
+    /* Darker grey for accessibility */
+    font-weight: 400;
+    /* Slightly heavier weight */
 }
 
 .text-link {
@@ -655,5 +666,6 @@ footer {
 }
 
 .page-header .bg-img {
-    filter: brightness(0.6); /* Darken page headers for text pop */
+    filter: brightness(0.6);
+    /* Darken page headers for text pop */
 }
