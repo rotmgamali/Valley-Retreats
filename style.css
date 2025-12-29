@@ -212,11 +212,13 @@ header.scrolled {
     animation: fadeInUp 1.2s forwards 0.5s;
 }
 
-font-size: 4rem;
-margin-bottom: var(--spacing-sm);
-font-style: italic;
-font-weight: 600;
-/* Bolder for visibility */
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+    font-weight: 400;
+    color: #F5F3EF;
+}
 
 .hero-content p {
     font-size: 1.2rem;
