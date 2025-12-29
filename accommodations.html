@@ -17,19 +17,26 @@
         <div class="nav-toggle">
             <span>&#9776;</span>
         </div>
-        <div class="logo"><a href="index.html">Valley Retreats</a></div>
-        <a href="contact.html" class="book-btn">Book Your Stay</a>
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center;">
+                <svg class="brand-icon" viewBox="0 0 24 24">
+                    <path class="path-draw" d="M12 3L2 20h20L12 3zm0 6l-5 9h10l-5-9z" />
+                </svg>
+                Valley Retreats
+            </a>
+        </div>
+        <a href="contact.html" class="book-btn">Request Invitation</a>
     </header>
 
     <div class="page-header">
-        <img src="images/cabin_exterior.png" alt="Cabins" class="bg-img">
-        <h1>Our Spaces</h1>
+        <img src="images/cabin_exterior.png" alt="Cabin Exterior" class="bg-img">
+        <h1>Our Sanctuaries</h1>
     </div>
 
     <div class="accommodations-container">
 
         <!-- Cabins -->
-        <div class="split-layout" id="cabins">
+        <div class="split-layout animate-on-scroll" id="cabins">
             <div class="split-image">
                 <img src="images/cabin_exterior.png" alt="Luxury Cabin" class="room-img"
                     onerror="this.src='https://placehold.co/800x600/C0C0C0/333333?text=Luxury+Cabins'">
@@ -52,7 +59,7 @@
         </div>
 
         <!-- Yurts -->
-        <div class="split-layout reverse-layout" id="yurts">
+        <div class="split-layout reverse-layout animate-on-scroll" id="yurts">
             <div class="split-content">
                 <h2>The Yurts</h2>tial Yurts</h2>
                 <p>
@@ -75,8 +82,14 @@
 
         </section>
 
+        <!-- Footer -->
         <footer>
-            <div class="logo">Valley Retreats</div>
+            <div class="logo" style="justify-content: center; margin-bottom: 1rem;">
+                <svg class="brand-icon" viewBox="0 0 24 24" style="stroke: var(--bg-color);">
+                    <path class="path-draw" d="M12 3L2 20h20L12 3zm0 6l-5 9h10l-5-9z" />
+                </svg>
+                Valley Retreats
+            </div>
             <div class="footer-nav">
                 <a href="our-story.html">Our Story</a>
                 <a href="accommodations.html">Spaces</a>
