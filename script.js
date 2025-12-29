@@ -87,4 +87,36 @@ document.addEventListener('DOMContentLoaded', () => {
     menuLinks.forEach(link => {
         link.addEventListener('click', toggleMenu);
     });
+
+    // --- Contact Form Handling ---
+    const contactForm = document.querySelector('form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Simulating form submission
+            const btn = this.querySelector('.submit-btn');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                // Replace form with success message
+                this.innerHTML = `
+                    <div style="text-align: center; padding: 2rem;">
+                        <h3 style="font-size: 2rem; color: var(--accent-sage); margin-bottom: 1rem;">Thank You</h3>
+                        <p>Your message has been received.</p>
+                        <p>We will guide you to your sanctuary soon.</p>
+                        <br>
+                        <p style="font-size: 0.9rem; opacity: 0.7;">(Redirecting to home...)</p>
+                    </div>
+                `;
+
+                // Redirect after a moment
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 4000);
+            }, 1500);
+        });
+    }
 });
