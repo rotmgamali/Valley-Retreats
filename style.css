@@ -26,6 +26,16 @@
     --spacing-xl: 8rem;
 }
 
+/* Drop Cap for Articles */
+.drop-cap {
+    float: left;
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    line-height: 0.8;
+    margin-right: 0.5rem;
+    color: var(--accent-sage);
+}
+
 * {
     margin: 0;
     padding: 0;
