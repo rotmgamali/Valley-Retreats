@@ -60,8 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <nav class="overlay-menu">
             <a href="index.html">Home</a>
             <a href="our-story.html">Our Story</a>
-            <a href="accommodations.html">Spaces</a>
-            <a href="journal.html">Journal</a>
+        <a href="immersions.html" style="color: var(--accent-sage);">Immersions</a>
+        <a href="accommodations.html">Spaces</a>
+        <a href="journal.html">Journal</a>
             <a href="contact.html">Contact</a>
         </nav>
     `;
