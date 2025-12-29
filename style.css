@@ -5,10 +5,10 @@
     /* Color Palette */
     --bg-color: #F5F3EF;
     /* Off-white/Cream */
-    --text-primary: #444444;
-    /* Soft Dark Grey (was #2C2C2C) */
-    --text-secondary: #666666;
-    /* Soft Medium Grey (was #5A5A5A) */
+    --text-primary: #525252;
+    /* Lighter Dark Grey (User Request) */
+    --text-secondary: #6E6E6E;
+    /* Lighter Medium Grey (WCAG AA Compliant) */
     --accent-sage: #8A9A5B;
     --accent-terracotta: #E2725B;
     --accent-slate: #708090;
