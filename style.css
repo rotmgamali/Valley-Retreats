@@ -187,7 +187,7 @@ header.scrolled {
     object-fit: cover;
     z-index: -1;
     /* Placeholder Gradient if image missing */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero_bg.png'), linear-gradient(45deg, #708090, #8A9A5B);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero_bg.png'), linear-gradient(45deg, #708090, #8A9A5B);
     background-size: cover;
     background-position: center;
 }
@@ -246,8 +246,8 @@ header.scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    /* 40% dark overlay */
+    background: rgba(0, 0, 0, 0.6);
+    /* 60% dark overlay for better text contrast */
     z-index: 2;
 }
 

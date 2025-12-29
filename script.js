@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Select elements to animate
-    const animatedElements = document.querySelectorAll('.card, .split-content, .manifesto');
+    // FIXED: Target the utility class directly so all sections appear
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
 
     animatedElements.forEach(el => {
         el.style.opacity = '0';
