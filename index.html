@@ -67,20 +67,33 @@
             animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+        .brand-name {
+            font-family: var(--font-heading);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            color: #fff;
+            margin: 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-weight: 300;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s;
+        }
+
         .subtitle {
             font-family: var(--font-body);
-            font-size: clamp(0.9rem, 3vw, 1.2rem);
+            font-size: clamp(0.7rem, 2.5vw, 1rem);
             color: rgba(255, 255, 255, 0.9);
-            margin-top: 1rem;
+            margin-top: 0.5rem;
             max-width: 80%;
             margin-left: auto;
             margin-right: auto;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.15em;
             text-transform: uppercase;
             font-weight: 300;
             text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
             opacity: 0;
-            animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
+            animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.4s;
         }
 
         @keyframes fadeInUp {
@@ -115,7 +128,8 @@
         <div class="overlay"></div>
         <div class="content">
             <h1>Coming Soon</h1>
-            <p class="subtitle">Powder Pit Eden's hottest spot for your next inspiring event</p>
+            <h2 class="brand-name">Powder Pit</h2>
+            <p class="subtitle">Eden's hottest spot for your next inspiring event</p>
         </div>
     </div>
 </body>
