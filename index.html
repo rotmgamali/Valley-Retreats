@@ -57,7 +57,7 @@
 
         h1 {
             font-family: var(--font-heading);
-            font-size: clamp(3rem, 10vw, 6rem);
+            font-size: clamp(3rem, 12vw, 6rem);
             color: #fff;
             margin: 0;
             font-style: italic;
@@ -67,15 +67,43 @@
             animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+        .subtitle {
+            font-family: var(--font-body);
+            font-size: clamp(0.9rem, 3vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 1rem;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(40px);
+                transform: translateY(30px);
             }
 
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 768px) {
+            .content {
+                padding-bottom: 12vh;
+            }
+
+            .bg-image {
+                background-position: 65% center;
+                /* Shift image slightly to show more house on thin screens */
             }
         }
     </style>
@@ -87,6 +115,7 @@
         <div class="overlay"></div>
         <div class="content">
             <h1>Coming Soon</h1>
+            <p class="subtitle">Powder Pit Eden's hottest spot for your next inspiring event</p>
         </div>
     </div>
 </body>
